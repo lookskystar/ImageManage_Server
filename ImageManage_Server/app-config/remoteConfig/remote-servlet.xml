@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<beans xmlns="http://www.springframework.org/schema/beans" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xmlns:context="http://www.springframework.org/schema/context" 
+		xsi:schemaLocation="http://www.springframework.org/schema/beans 
+							http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+							http://www.springframework.org/schema/context 
+							http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	
+	<!-- 预设管理 -->
+	<bean name="/presetImageService" class="org.springframework.remoting.caucho.HessianServiceExporter">
+		<property name="serviceInterface" value="com.image.set.service.PresetImageService" /> 
+		<property name="service" ref="presetImageService" /> 
+	</bean>
+	<bean name="/queryService" class="org.springframework.remoting.caucho.HessianServiceExporter">
+		<property name="serviceInterface" value="com.image.query.service.QueryService" /> 
+		<property name="service" ref="queryService" /> 
+	</bean>
+	<bean name="/dictUsersService" class="org.springframework.remoting.caucho.HessianServiceExporter">
+		<property name="serviceInterface" value="com.image.work.service.DictUsersService" /> 
+		<property name="service" ref="dictUsersService" /> 
+	</bean>
+	<!-- 设备管理 -->
+	<bean name="/deviceService" class="org.springframework.remoting.caucho.HessianServiceExporter">
+		<property name="serviceInterface" value="com.image.work.service.DeviceService" /> 
+		<property name="service" ref="deviceService" /> 
+	</bean>
+</beans>

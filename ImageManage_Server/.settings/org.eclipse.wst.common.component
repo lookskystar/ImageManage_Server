@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ImageManage_Server">
+        <wb-resource deploy-path="/" source-path="/WebRoot" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/app-config"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src-common"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src-set"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src-work"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src-admin"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src-query"/>
+        <property name="context-root" value="/Server_ImageManage"/>
+        <property name="java-output-path" value="/ImageManage_Server/WebRoot/WEB-INF/classes"/>
+    </wb-module>
+</project-modules>
